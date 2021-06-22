@@ -2,15 +2,11 @@
 
 class Player
   attr_accessor :score
-
+  @@num_players = 0
   def initialize()
     @score = 3
     @@num_players += 1
     @player_num = @@num_players
-  end
-
-  def score()
-    self.score
   end
 
   def to_s
@@ -18,7 +14,7 @@ class Player
   end
 end
 
-player = Player.new("hello")
+# player = Player.new("hello")
 
-puts player.player_name
+# puts player.player_name
 
